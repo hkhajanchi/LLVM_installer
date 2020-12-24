@@ -15,7 +15,7 @@ EXTRAS="extra" #"noextra"
 EXTRA_CMAKE_OPTIONS="" 
 
 all: archive src
-	./scripts/build.sh $(LLVM_VERSION) release "$(BACKENDS)" $(TESTS) "$(EXTRA_CMAKE_OPTIONS)"
+	./scripts/build.sh $(LLVM_VERSION) debug "$(BACKENDS)" $(TESTS) "$(EXTRA_CMAKE_OPTIONS)"
 
 archive:
 	if test -e $@/llvm-$(LLVM_VERSION).src.tar.xz ; then mv archive/* ./ ; fi

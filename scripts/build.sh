@@ -11,7 +11,7 @@ function compile_install {
   eval ${CMAKE} ${CMAKE_OPTIONS} ../
 
   # Compile
-  make -j 64 clang ;
+  make -j 2 clang ;
   echo "" ;
 
   # Install
